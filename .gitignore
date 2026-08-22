@@ -1,0 +1,16 @@
+# Local/private configuration
+.env
+.env.*
+js/config.local.js
+
+# Dependencies / OS / tooling
+node_modules/
+.DS_Store
+*.log
+.vscode/
+
+# Build / cache
+.vercel/
+dist/
+build/
+coverage/

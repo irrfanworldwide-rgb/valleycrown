@@ -1,0 +1,14 @@
+/* Responsive rules are kept in style.css for this version. */
+
+@media(max-width:560px){
+  .search-btn{height:42px;padding:0 13px;font-size:13px}
+  .nav-actions{gap:7px}
+  .nav-actions:not(.nav-actions--left) .icon-btn:nth-child(1){display:grid}
+  .gallery{grid-template-columns:1fr;gap:12px}
+  .thumbs{display:flex;overflow-x:auto;gap:8px;order:2;padding:2px 1px 5px;scroll-snap-type:x proximity;scrollbar-width:none}
+  .thumbs::-webkit-scrollbar{display:none}
+  .thumbs .thumb{flex:0 0 62px;width:62px;scroll-snap-align:start}
+  .main-image{order:1}
+  .home-cross{left:10px;top:116px;bottom:auto;width:34px;height:34px;font-size:18px}
+  .whatsapp-float{right:12px;bottom:84px}
+}

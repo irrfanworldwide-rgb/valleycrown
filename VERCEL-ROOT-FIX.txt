@@ -1,0 +1,15 @@
+IMPORTANT — VERCEL ROOT DIRECTORY
+
+Your GitHub repository currently contains BOTH:
+1) the new project files at the repository root, and
+2) an older folder named VALLEY-CROWN-JAVASCRIPT-PRODUCTION-final.
+
+Your live screenshot matches the OLD nested folder, which means Vercel is still deploying that folder as the Root Directory.
+
+BEST FIX in Vercel:
+Project > Settings > Build and Deployment > Root Directory > clear it / set repository root (.) > Save > Redeploy.
+
+This package also mirrors the corrected project into the old nested folder so the site works even before you change that setting.
+
+Do not add "outputDirectory": "." to vercel.json.
+Do not add flowType: 'pkce' to js/supabase.js.

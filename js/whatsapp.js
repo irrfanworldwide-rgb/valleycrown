@@ -1,0 +1,4 @@
+import { WHATSAPP_NUMBER } from './config.js';
+export function wa(message){return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`}
+export function productMessage(p,size,color,qty){return `Hello Valley Crown,\n\nI would like to order:\n\nProduct: ${p.name}\nSize: ${size||'Not specified'}\nColor: ${color||'Not specified'}\nQuantity: ${qty}\nPrice: ₹${Number(p.sale_price||p.price).toLocaleString('en-IN')}\n\nPlease confirm availability and delivery details.`}
+export function cartMessage(items,total){return `Hello Valley Crown,\n\nI would like to place an order:\n\n${items.map((i,n)=>`${n+1}. ${i.name}\nSize: ${i.size||'N/A'}\nColor: ${i.color||'N/A'}\nQty: ${i.qty}\nPrice: ₹${(i.price*i.qty).toLocaleString('en-IN')}`).join('\n\n')}\n\nTotal: ₹${total.toLocaleString('en-IN')}\n\nPlease confirm availability and delivery details.`}

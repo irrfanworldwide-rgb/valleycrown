@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+  <title>Dashboard — Valley Crown Admin</title>
+</head>
+<body class="admin-body" data-admin-page="dashboard">
+  <div class="admin-shell">
+    <div class="admin-mobile-bar">
+      <button class="admin-menu-btn" data-admin-menu aria-label="Open admin menu">☰</button>
+      <div class="wordmark">VALLEY CROWN</div>
+      <a class="admin-mobile-store" href="/" aria-label="Open storefront">↗</a>
+    </div>
+    <div class="admin-overlay" data-admin-overlay></div>
+    <aside class="admin-sidebar" data-admin-sidebar>
+      <div class="admin-brand">
+        <div class="wordmark">VALLEY CROWN</div>
+        <div class="admin-kicker">Commerce Console</div>
+      </div>
+      <nav class="admin-nav" aria-label="Admin navigation">
+        <a data-nav="dashboard" href="/admin/index.html"><span>Overview</span><small>Dashboard</small></a>
+        <a data-nav="products" href="/admin/products.html"><span>Products</span><small>Catalogue</small></a>
+        <a data-nav="categories" href="/admin/categories.html"><span>Categories</span><small>Collections</small></a>
+        <a data-nav="orders" href="/admin/orders.html"><span>Orders</span><small>Fulfilment</small></a>
+        <a data-nav="settings" href="/admin/settings.html"><span>Settings</span><small>Store details</small></a>
+      </nav>
+      <div class="admin-sidebar__bottom">
+        <a class="admin-store-link" href="/">Open storefront <span>↗</span></a>
+        <button class="admin-btn admin-btn--secondary" data-logout>Sign out</button>
+      </div>
+    </aside>
+    <main class="admin-main">
+      <header class="admin-top">
+        <div>
+          <span class="admin-eyebrow">CONTROL CENTRE</span>
+          <h1 class="admin-title">Dashboard</h1>
+          <p class="admin-subtitle">A clear view of your Valley Crown store.</p>
+        </div>
+        <div class="admin-live-pill"><span></span> Store connected</div>
+      </header>
+
+      <section class="admin-grid" aria-label="Store overview">
+        <article class="admin-card admin-stat-card"><div class="admin-stat-icon">P</div><div><span>Products</span><strong data-stat-products>—</strong><small>Catalogue items</small></div></article>
+        <article class="admin-card admin-stat-card"><div class="admin-stat-icon">O</div><div><span>Orders</span><strong data-stat-orders>—</strong><small>Recorded orders</small></div></article>
+        <article class="admin-card admin-stat-card"><div class="admin-stat-icon">L</div><div><span>Low stock</span><strong data-stat-low>—</strong><small>Needs attention</small></div></article>
+        <article class="admin-card admin-stat-card"><div class="admin-stat-icon">₹</div><div><span>Revenue</span><strong data-stat-revenue>—</strong><small>Delivered orders</small></div></article>
+      </section>
+
+      <section class="admin-dashboard-columns">
+        <div class="admin-card admin-panel-card">
+          <div class="admin-toolbar">
+            <div><span class="admin-section-label">RECENT ACTIVITY</span><h2>Recent orders</h2><div class="admin-mini">Latest manually recorded orders</div></div>
+            <a class="admin-btn admin-btn--secondary admin-btn--compact" href="/admin/orders.html">Manage orders</a>
+          </div>
+          <div class="admin-recent" data-recent-orders><div class="admin-list-empty">Loading…</div></div>
+        </div>
+        <aside class="admin-card admin-quick-card">
+          <span class="admin-section-label">QUICK ACTIONS</span>
+          <h2>Manage store</h2>
+          <div class="admin-quick-links">
+            <a href="/admin/products.html">Add or edit products <span>→</span></a>
+            <a href="/admin/categories.html">Manage categories <span>→</span></a>
+            <a href="/admin/orders.html">Update orders <span>→</span></a>
+            <a href="/admin/settings.html">Store settings <span>→</span></a>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+  <a class="admin-home-cross" href="/" aria-label="Back to storefront" title="Back to Storefront">×</a>
+  <script type="module" src="../js/admin.js"></script>
+</body>
+</html>
